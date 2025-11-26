@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Carros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h2>Cadastro de Carros</h2>
+
+    <form id="formCarro">
+        <input type="text" id="modelo" placeholder="Modelo do Carro" required>
+        <input type="text" id="fabricante" placeholder="Fabricante do Carro" required>
+        <input type="number" id="valor" placeholder="Valor (R$)" required min="0" step="0.01">
+        <input type="number" id="ano" placeholder="Ano" required min="1886">
+
+        <button type="submit" id="btnEnviar">Salvar Carro</button>
+        <button type="button" id="btnCancelar">Cancelar Edição</button>
+        <button type="button" id="btnLimpar">Limpar Tudo</button>
+    </form>
+
+    <h3>Carros Cadastrados:</h3>
+    <div id="listaCarros"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

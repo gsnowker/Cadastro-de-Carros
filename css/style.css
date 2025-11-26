@@ -1,0 +1,100 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h2, h3 { text-align: center; color: #f3f3f3; }
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+input {
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: filter 0.2s;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+#btnEnviar { 
+    background: #28a745; 
+    margin-top: 15px; 
+    padding: 12px; 
+    font-size: 16px; 
+}
+
+#btnLimpar { background: #dc3545; 
+    padding: 12px; 
+    font-size: 16px; 
+    margin-top: 10px; 
+}
+
+#btnCancelar { 
+    background: #6c757d; 
+    padding: 12px; 
+    font-size: 16px; 
+    margin-top: 10px; 
+    display: none; 
+}
+
+#listaCarros {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.card {
+    background: #f3f3f3;
+    color: #333;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-remover { 
+    background: #dc3545; 
+    flex: 1; 
+}
+
+.btn-editar { 
+    background: #007bff; 
+    flex: 1; 
+}
